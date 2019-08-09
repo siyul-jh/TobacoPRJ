@@ -1,0 +1,38 @@
+.metadata
+
+# ------------Spring
+toba/target/
+toba/.mvn/wrapper/maven-wrapper.jar
+toba/src/test
+toba/.apt_generated
+toba/.factorypath
+toba/.settings
+toba/.springBeans
+toba/ss.sts4-cache
+
+# toba/.classpath
+# toba/.project
+
+# ------------React
+
+# dependencies
+tobaco/node_modules
+tobaco/.pnp
+tobaco/.pnp.js
+
+# testing
+tobaco/coverage
+
+# production
+tobaco/build
+
+# misc
+tobaco/.DS_Store
+tobaco/.env.local
+tobaco/.env.development.local
+tobaco/.env.test.local
+tobaco/.env.production.local
+
+tobaco/npm-debug.log*
+tobaco/yarn-debug.log*
+tobaco/yarn-error.log*
