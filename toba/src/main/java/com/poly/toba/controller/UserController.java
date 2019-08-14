@@ -319,10 +319,10 @@ public class UserController {
 		String userNickNameSearch ="";
 		
 		switch(searchOption) {
-			case "0" :
+			case "아이디" :
 				userEmailSearch = userSearch;
 				break;
-			case "1" :
+			case "닉네임" :
 				userNickNameSearch = userSearch;
 				break;
 		}
