@@ -33,8 +33,9 @@ class Body extends Component {
                                     <h3>회원관리</h3>
                                     <ul className="adminList-unstyled">
                                         <li><Link to="/totalmembermanage" >전체 회원관리</Link></li>
+                                        <li><Link to="/EnableMemberManage">활동 회원관리</Link></li>
                                         <li><Link to="/disablemembermanage">정지 회원관리</Link></li>
-                                        <li><Link to="/stepmanage">스탭 관리</Link></li>
+                                        {/* <li><Link to="/stepmanage">스탭 관리</Link></li> */}
                                     </ul>
                                 </div>
                             </div>

@@ -22,6 +22,7 @@ import Mypage from './user/myPage/Mypage';
 import AdminTop from './admin/adminMain/Top';
 import AdminBody from './admin/adminMain/Body';
 import AdminTotalMemberManage from './admin/memberManage/TotalMemberManage';
+import AdminEnableMemberManage from './admin/memberManage/EnableMemberManage';
 import AdminDisableMemberManage from './admin/memberManage/DisableMemberManage';
 import AdminStepManage from './admin/memberManage/StepManage';
 import AdminNoticeManage from './admin/noticeManage/NoticeManage';
@@ -92,6 +93,7 @@ class Root extends Component{
                     <Route exact path="/noticeModify/:notice" component={NoticeModify}/>
                     <Route exact path="/admin" component={AdminBody}/>
                     <Route exact path="/totalmembermanage" component={AdminTotalMemberManage}/>
+                    <Route exact path="/enablememberManage" component={AdminEnableMemberManage}/>
                     <Route exact path="/disablememberManage" component={AdminDisableMemberManage}/>
                     <Route exact path="/stepmanage" component={AdminStepManage}/>
                     <Route exact path="/noticemanage" component={AdminNoticeManage}/>

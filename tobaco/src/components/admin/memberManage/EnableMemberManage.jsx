@@ -2,9 +2,10 @@ import React from 'react';
 import { Component,Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Toggle from 'react-toggle'
-class StepManage extends Component{
+class DisableMemberManage extends Component{
 
     // 전체 회원관리 : TotalMemberManage
+    // 활동 회원관리 : EnableMemberManage
     // 정지 회원관리 : DisableMemberManage
     // 스탭 관리 : StepManage
 
@@ -45,15 +46,15 @@ class StepManage extends Component{
                     <div className="adminLnb-sub">
                         <div className="adminContainer">
                             <Link to="/TotalMemberManage">전체 회원관리</Link>
-                            <Link to="/EnableMemberManage">활동 회원관리</Link>
+                            <Link to="/EnableMemberManage" className="adminActive">활동 회원관리</Link>
                             <Link to="/DisableMemberManage">정지 회원관리</Link>
-                            <Link to="/StepManage" className="adminActive">스탭 관리</Link>
+                            {/* <Link to="/StepManage">스탭 관리</Link> */}
                         </div>
                     </div>
                 </div>
                 <div className="adminContainer adminBody-footer">
                     <div className="adminRow">
-                        <h2>스탭 관리</h2>
+                        <h2>활동 회원 관리</h2>
                     </div>
                     <hr />
                     <div className="adminRow">
@@ -69,28 +70,14 @@ class StepManage extends Component{
                                     </span>
                                 </div>
                             </div>
-                            {/* <div className="adminCol-md-7">
-                                <div className="adminDropdown">
-                                    <button className="adminBtn adminBtn-default adminBropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">상세검색
-                                        <span className="adminCaret"></span>
-                                    </button>
-                                    <ul className="adminDropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li role="presentation"><a role="menuitem" href="#">게시글 수</a></li>
-                                        <li role="presentation"><a role="menuitem" href="#">댓글 수</a></li>
-                                        <li role="presentation"><a role="menuitem" href="#">가입일</a></li>
-                                    </ul>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                     <hr />
                     <div className="adminRow adminShadow-custom">
                         <div className="adminCol-md-12">
-                            <p>스탭수 <span className="adminBadge">#,###</span></p>
+                        <p>회원수 <span className="adminBadge">#,###</span></p>
                         </div>
-                        <div className="adminCol-md-12">
-                            <p><button type="button" className="adminBtn adminBtn-primary">권한부여</button></p>
-                        </div>
+                    <div className="adminCol-md-12"><p><button type="button" className="adminBtn adminBtn-primary">활동정지</button></p></div>
                         <div className="adminTable adminText-center">
                             <div className="adminCheckbox">
                                 <label className="adminCol-md-12 adminThead">
@@ -99,7 +86,7 @@ class StepManage extends Component{
                                     <div className="adminCol-md-3">가입일</div>
                                     <div className="adminCol-md-2">게시글 수</div>
                                     <div className="adminCol-md-2">댓글 수</div>
-                                    <div className="adminCol-md-1">스탭</div>
+                                    <div className="adminCol-md-1">정지</div>
                                 </label>
                             </div>
                         </div>
@@ -146,4 +133,4 @@ class StepManage extends Component{
     }
 }
 
-export default StepManage
+export default DisableMemberManage

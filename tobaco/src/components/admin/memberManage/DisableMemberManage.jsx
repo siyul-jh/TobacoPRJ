@@ -45,8 +45,9 @@ class DisableMemberManage extends Component{
                     <div className="adminLnb-sub">
                         <div className="adminContainer">
                             <Link to="/TotalMemberManage">전체 회원관리</Link>
+                            <Link to="/EnableMemberManage">활동 회원관리</Link>
                             <Link to="/DisableMemberManage" className="adminActive">정지 회원관리</Link>
-                            <Link to="/StepManage">스탭 관리</Link>
+                            {/* <Link to="/StepManage">스탭 관리</Link> */}
                         </div>
                     </div>
                 </div>
@@ -87,7 +88,7 @@ class DisableMemberManage extends Component{
                         <div className="adminCol-md-12">
                         <p>회원수 <span className="adminBadge">#,###</span></p>
                         </div>
-                    <div className="adminCol-md-12"><p><button type="button" className="adminBtn adminBtn-primary">활동정지</button></p></div>
+                    <div className="adminCol-md-12"><p><button type="button" className="adminBtn adminBtn-primary">활동가능</button></p></div>
                         <div className="adminTable adminText-center">
                             <div className="adminCheckbox">
                                 <label className="adminCol-md-12 adminThead">
